@@ -1,0 +1,660 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../c.ttf') format('truetype');
+}
+body{
+   font-family: 'MyFont'; 
+}
+
+#main{
+    background-image: url('../img/n.jpg');
+    -webkit-background-size: cover;
+    position: absolute;
+    top:0vh;
+    left: 0vw;
+    overflow: hidden;
+
+}
+
+#appname{
+    font-family: 'MyFont', Fallback, sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 17vw;
+    top: 7%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#login{
+    font-family: 'MyFont', Fallback, sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 8vw;
+    top: 30%;
+    left:50%;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+}
+#signup{
+      font-family: 'MyFont', Fallback, sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 5.5vw;
+    top: 30%;
+    left:50%;
+    -webkit-transform: translate(-0%, -50%);
+    transform: translate(-0%, -50%);
+}
+.white{
+    color: white;
+    opacity: 0.8;
+}
+input{
+    padding-bottom: 11vw;
+    width:80%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+	font-size: 7vw;
+    font-family: 'MyFont', Fallback, sans-serif;
+}
+
+input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+    opacity: 0.8;
+}
+
+#form{
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    top: 65%;
+    left:55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+#form2{
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    top: 62%;
+    left:55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#forgot{
+    font-family: 'MyFont', Fallback, sans-serif;
+    font-size: 3.5vw;
+    width: 90%;
+    color: white;
+    position: absolute;
+    bottom: 3%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#greeting{
+    height: 11.5%;
+    position: absolute;
+    top:15%;
+    left:50%;
+    display: none;
+}
+
+#circle1{
+    border-style: solid;
+    border-color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    position: absolute;
+    top: 75%;
+    left:65%;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation-iteration-count: 4;
+}
+
+#circle2{
+    border-style: solid;
+    border-color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    position: absolute;
+    top: 75%;
+    left:65%;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation-iteration-count: 4;
+}
+
+#sucssesmsg{
+    width: 60%;
+    position: absolute;
+    top:76.5%;
+    left:2%;
+    display: none;
+}
+
+#errormsg{
+    width: 60%;
+    position: absolute;
+    top:76.5%;
+    left:2%;
+    display: none;
+}
+
+#emptymsg{
+    width: 60%;
+    position: absolute;
+    top:76.5%;
+    left:2%;
+    display: none;
+}
+
+#submitsignup{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+#dash{
+    position: absolute;
+    top:0vh;
+    left: 0vw;
+    overflow: hidden;
+    display: none;
+    background-color: white;
+}
+
+#dashBack{
+    -webkit-filter:blur(0.7vw);
+    overflow: hidden;
+}
+
+#tizi{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #800080;
+    top:87%;
+    box-shadow: 2vw 0.3vw 2vw gray;
+}
+
+.tiziDisappered{
+    display: none;
+}
+
+.tiziAppered{
+    display: block;
+}
+
+
+
+#optionTizi{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background:rgba(0,0,0,1);
+    top:33%;
+    left:0%;
+    display: none;
+}
+
+#content{
+    background:white;
+    height: 100vh;
+    position: absolute;
+    top: 55%;
+    left:0vw;
+    width: 100vw;
+    
+}
+
+#content:before{
+    border-bottom: 7vh solid white;
+    border-left: 50vw solid transparent;
+    border-right:50vw solid transparent;
+    height: 0vh;
+    left: 0vw;
+    content: "";
+    position: absolute;
+    top:-6.8vh;
+    width: 0;
+    
+}
+
+#header{
+    font-family: 'MyFont', Fallback, sans-serif ;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+}
+#ham{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:8%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+#closebar{
+    display: block;
+    position: absolute;
+    top: 2%;
+    right:3%;
+    color: white;
+}
+#title{
+    display: inline;
+    font-size: 8vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#search{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    right:2%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#sideBar{
+    position: fixed;
+    top:0vh;
+    left: -2vw;
+    height: 100%;
+    width: 57%;
+   background: -webkit-linear-gradient(bottom, black , gray); 
+    display: none;
+    animation-duration: 0.3s;
+}
+
+#dpOut{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    height: 35vw;
+    width: 35vw;
+    background: rgba(0,0,0,0.4);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#dpIn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    height: 75%;
+    width: 75%;
+    background-image: url(../img/z.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#glowCircle{
+    position: absolute;
+    top:45%;
+    left: 45%;
+    height: 10%;
+    width: 10%;
+    background-color: greenyellow;
+    border-radius: 50%;
+    -webkit-filter: blur(0.4vw);
+   -webkit-animation: myOrbit 4s linear infinite;
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(16vw) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(16vw) rotate(0deg); }
+}
+
+#option1{
+    height: 36vw;
+    width: 36vw;
+    position: absolute;
+    bottom:22%;
+    left: 10%;
+    font-size: 6vw;
+}
+#option2{
+    height: 36vw;
+    width: 36vw;
+    position: absolute;
+    bottom:22%;
+    right: 10%;
+    font-size: 6vw;
+}
+
+#offdash{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top:10%;
+    left:0px;
+    background-color: white;
+    display: none;
+}
+#peopledash{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top:10%;
+    left:0px;
+    background-color: white;
+    display: none;
+}
+
+#offdashHead{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    display: block;
+    color: white;
+}
+
+#peopledashHead{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    display: block;
+    color: white;
+}
+
+
+#inform{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:25%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+#pol{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+#ask{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:75%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.card{
+    height: 25%;
+    width: 95%;
+    position: absolute;
+    background-color: lightcyan;
+    left:2.5%;
+}
+#cardti{
+     height: 20%;
+    width: 95%;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    left:2.5%;
+    top:3%;
+    
+}
+#cardti1{
+     height: 20%;
+    width: 95%;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    left:2.5%;
+    top:25%;
+    
+}
+
+#cardti2{
+     height: 20%;
+    width: 95%;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    left:2.5%;
+    top:48%;
+    
+}
+
+#card1{
+    top:12%;
+}
+#card2{
+    top:39%;
+}
+#card3{
+    top:67%;
+    font-size: 6vw;
+}
+#like{
+ 
+     display: inline;
+    position: absolute;
+    bottom: 10%;
+    left:20%;
+    
+}
+
+#upvote{
+ 
+     display: inline;
+    position: absolute;
+    bottom: 10%;
+    left:45%;
+    
+}
+#heart{
+ 
+     display: inline;
+    position: absolute;
+    bottom: 10%;
+    left:67%;
+    
+}
+
+#card1img{
+    height: 35%;
+    width: 20%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left:6%;
+}
+#card4img{
+    height: 25%;
+    width: 20%;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left:6%;
+}
+
+#card2img{
+    height: 35%;
+    width: 20%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left:6%;
+}
+
+#card3img1{
+    height: 55%;
+    width: 26%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left:3%;
+}
+#card3img2{
+    height: 55%;
+    width: 26%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left:36%;
+}
+#card3img3{
+    height: 55%;
+    width: 26%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left:68%;
+}
+
+#card3img5{
+    height: 25%;
+    width: 26%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left:3%;
+}
+
+#problem{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:33%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+#suggestion{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:67%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+#card4{
+    top:12%;
+    height:52%;
+}
+
+#pollnow{
+    height: 76vw;
+    width: 76vw;
+    border-radius: 50%;
+    position: absolute;
+    top:28%;
+    left:12%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    box-shadow: 0vw 0.2vw 6vw gray;
+    color: white;
+}
+
+#text{
+    font-size: 10vw;
+}
+#done{
+    position: absolute;
+    bottom:17%;
+    left:30%;
+}
+#cancell{
+  
+    position: absolute;
+    bottom:17%;
+    right:30%;
+}
+#data{
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    top:6.5%;
+    right:4%;
+    font-size: 6vw;
+}
+#dataU{
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    top:6.5%;
+    right:4%;
+    font-size: 6vw;
+}
+
+#data1{
+    position: absolute;
+    height: 50%;
+    width: 62%;
+    top:6.5%;
+    right:4%;
+    font-size: 6vw;
+}
+
+  input[type=radio] {
+    border: 0px;
+    width: 5vw;
+    height: 5vw;
+}
+
+#list{
+    width: 100%;
+    position: absolute;
+    top:36%;
+    left:0px;
+    font-size: 7.5vw;
+    color: white;
+}
+a{
+    color:white;
+    text-decoration:none;
+}

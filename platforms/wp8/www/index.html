@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>     
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    </head>
+    <body onload="main()">
+       
+       <div id="main">
+           <div id="appname" onclick="yo()">AAYAM</div>
+           <div id="login" onclick="logintoggle(1)">LOGIN | </div>
+           <div id="signup" onclick="logintoggle(2)">&nbsp;SIGNUP</div>
+           <div id="form" class="animated fadeIn" align="center">
+                <i class="fa fa-user fa-3x white"></i>&nbsp&nbsp&nbsp
+                <input id="userNameLog" type="text" class="foo" placeholder="username">
+                <br>
+                <i class="fa fa-lock fa-3x white"></i>&nbsp&nbsp&nbsp
+                <input id="passWordLog" type="password" class="foo" placeholder="password">
+           </div>
+           
+            <div id="form2" class="animated fadeIn" align="center">
+                <i class="fa fa-user fa-3x white"></i>&nbsp&nbsp&nbsp
+                <input id="userName" type="text" class="foo" placeholder="username">
+                <br>
+                <i class="fa fa-lock fa-3x white"></i>&nbsp&nbsp&nbsp
+                <input id="passWord" type="password" class="foo" placeholder="password">
+                <br>
+                <i class="fa fa-envelope fa-3x white"></i>&nbsp&nbsp&nbsp
+                <input id="email" type="email" class="foo" placeholder="email">
+           </div>
+           
+           <div id="greeting" class="animated bounce"><img src="img/1.png" height="100%" width="auto"/></div>
+           
+           <div id="submitlogin" class="animated fadeIn">
+            <div id="circle1" align="center" onclick="submit(1)">
+                <i class="fa fa-chevron-right fa-3x white"></i>       
+            </div>
+           </div>
+           
+           <div id="submitsignup" class="animated fadeIn">
+            <div id="circle2" align="center" onclick="submit(2)">
+                <i class="fa fa-chevron-right fa-3x white"></i>       
+            </div>
+           </div>
+           
+           <div id="sucssesmsg" class="animated fadeIn">
+               <img src="img/2.png" height="auto" width="100%"/>
+           </div>
+           
+            <div id="errormsg" class="animated fadeIn">
+               <img src="img/3.png" height="auto" width="100%"/>
+           </div>
+           
+           <div id="emptymsg" class="animated fadeIn">
+               <img src="img/4.png" height="auto" width="100%"/>
+           </div>
+           <div id="forgot" align="center">FORGOT PASSWORD | FORGOT USERNAME</div>
+           
+	   </div>
+        
+        
+        <div id="dash" class="animated slideInLeft">
+            <img src="img/b.jpg" height="60%" width="auto">
+            <div id="header">
+                <div id="ham" onclick="sideBar(1)"> <i class="fa fa-bars fa-4x"></i>
+                </div>
+                
+                <div id="title">AAYAM
+                </div>
+                <div id="search"><i class="fa fa-search fa-4x"></i>
+                </div>
+            </div>
+            <div id="content" >
+            </div>
+             
+            <div id="option1" align="center" onclick="offdash()">
+                <img src="img/off.png" height="100%" width="100%" />
+                Government Official
+            </div>
+            <div id="option2" align="center" onclick="peopledash()">
+                <img src="img/people.png" height="100%" width="100%" />
+                Citizen
+            </div>
+            
+            
+            <div id="offdash" class="animated slideInLeft">
+                <div id="offdashHead">
+                    <div id="inform" onclick="pollnow(1)"> <i class="fa fa-pencil fa-4x"></i>
+                    </div>
+                    <div id="pol" onclick="pollnow(2)"> <i class="fa fa-pie-chart fa-4x"></i>
+                    </div>
+                    <div id="ask" onclick="pollnow(3)"> <i class="fa fa-question-circle fa-4x"></i>
+                    </div>
+                </div>
+                
+                <div id="card1" class="card">
+                    <div id="data">
+                        Shortage of water in Haveli. 19 died within 3 days. #GOI wake up and do something.
+                    </div>
+                    <div id="card1img">
+                        <img src="img/p1.jpg" height="100%" width="auto">
+                    </div>
+                    
+                    <ol class="grid" style="padding-left: 0px;">
+					
+				
+					<li class="grid__item" id="like">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-thumbs-up fa-4x"></span></button>
+					</li>
+                        
+                        <li class="grid__item" id="upvote">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-star fa-4x"></span></button>
+					</li>
+                        <li class="grid__item" id="heart">
+						<button class="icobutton icobutton--heart"><span class="fa fa-heart fa-4x"></span></button>
+					</li>
+                       
+					
+					
+				</ol>
+                </div>
+                <div id="card2" class="card">
+                    <div id="data">
+                        #JNU should be closed. Spreading Violence in India!
+                    </div>
+                    <div id="card2img">
+                        <img src="img/p2.jpg" height="100%" width="auto">
+                    </div>
+                    <ol class="grid" style="padding-left: 0px;">
+					
+				
+					<li class="grid__item" id="like">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-thumbs-up fa-4x"></span></button>
+					</li>
+                        
+                        <li class="grid__item" id="upvote">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-star fa-4x"></span></button>
+					</li>
+                        <li class="grid__item" id="heart">
+						<button class="icobutton icobutton--heart"><span class="fa fa-heart fa-4x"></span></button>
+					</li>
+                       
+					
+					
+				</ol>
+                </div>
+                <div id="card3" class="card">
+                    <div id="card3img1">
+                        <img src="img/j1.jpg" height="100%" width="auto">
+                    </div>
+                    <div id="card3img2">
+                        <img src="img/j2.jpg" height="100%" width="auto">
+                    </div>
+                    <div id="card3img3">
+                        <img src="img/j3.jpg" height="100%" width="auto">
+                    </div>
+                    &nbsp;&nbsp; Link to Whole Story : bt.ly/Gh3pL
+                </div>
+                
+                
+            </div>
+        
+            <div id="peopledash" class="animated slideInLeft">
+                <div id="peopledashHead">
+                    <div id="problem" onclick="pollnow(4)"> <i class="fa fa-bullhorn fa-4x"></i>
+                    </div>
+                    <div id="suggestion" onclick="pollnow(5)"> <i class="fa fa-commenting fa-4x"></i>
+                    </div>
+                </div>
+                
+                <div id="card4" class="card">
+                    <div id="data1">
+                        Should One Rank One Pansion for government officials be applied in India?<br>
+                        <input type="radio" id="radio02" name="radio" />Yes.<br>
+                        <input type="radio" id="radio02" name="radio" />No.<br>
+                        <input type="radio" id="radio02" name="radio" />Maybe.<br>
+                    </div>
+                    <div id="card4img">
+                        <img src="img/p4.jpg" height="100%" width="auto">
+                    </div>
+                    
+                    <ol class="grid" style="padding-left: 0px;">
+					
+				
+					<li class="grid__item" id="like">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-thumbs-up fa-4x"></span></button>
+					</li>
+                        
+                        <li class="grid__item" id="upvote">
+						<button class="icobutton icobutton--thumbs-up"><span class="fa fa-star fa-4x"></span></button>
+					</li>
+                        <li class="grid__item" id="heart">
+						<button class="icobutton icobutton--heart"><span class="fa fa-heart fa-4x"></span></button>
+					</li>
+                       
+					
+					
+				</ol>
+                </div>
+                
+                <div id="card3" class="card">
+                    <div id="dataU">
+                        'India a jail of different nationalities': New posters in JNU campus criticise Indian government.
+                    </div>
+                    <div id="card3img5">
+                        <img src="img/p3.jpg" height="100%" width="auto">
+                    </div>
+                    
+            
+                </div>
+                
+                
+            </div>
+                        
+            <div id="pollnow" class="animated bounceIn" align="center">
+                <br>
+                
+                <div id="informnow"><div id="text">Inform</div> <i id="chnge" class="fa fa-pencil fa-4x"></i><br><br>
+                    <input id="datata" type="text" class="foo" placeholder="enter details...">
+                    </div>
+                <div id="done">
+                    <ol class="grid" style="padding-left: 0px;">
+                    <li class="grid__item" onclick="vroom()">
+						<button class="icobutton icobutton--heart"><span class="fa fa-check-circle fa-4x"></span></button>
+					</li>
+                    </ol>
+                </div>
+                <div id="cancell" onclick="closee()">
+                    <ol class="grid" style="padding-left: 0px;">
+                    <li class="grid__item">
+						<button class="icobutton icobutton--heart"><span class="fa fa-close fa-4x"></span></button>
+					</li>
+                    </ol>
+                </div>
+            </div>        
+            
+            
+            <div id="optionTizi" >
+                <div id="cardti">
+                    <img src="img/n1.jpg" height="100%" width="30%"/>
+                    <div id="data1">
+                        India vs Pakistan, Asia Cup T20 2016: Virat Kohli Leads India to Five-Wicket Win.
+                    </div>
+                </div>
+                 <div id="cardti1">
+                    <img src="img/n2.jpg" height="100%" width="30%"/>
+                     <div id="data1">
+                       Government ready to implement recommendations of 7th Pay Commission
+                    </div>
+                </div>
+                 <div id="cardti2">
+                    <img src="img/j3.jpg" height="100%" width="30%"/>
+                     <div id="data1">
+                        Kanhaiya Kumar's Security Increased At Tihar, Another Student Joins Probe
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="tizi" class="tizi">
+            </div>
+            
+           
+                
+            
+            <div id="sideBar">
+                <div id="closebar" onclick="sideBar(2)">
+                <i class="fa fa-chevron-left fa-4x"></i>
+                </div>
+                <div id="dpOut">
+                    <div id="dpIn">
+                    </div>
+                    <div id="glowCircle">
+                    </div>
+                    <div id="glowCircle1">
+                    </div>
+                    <div id="glowCircle2">
+                    </div>
+                    
+                </div>
+                
+                <div id="list" align="center">
+                    <div onclick="home()"><i class="fa fa-home fa-4x"></i>&nbsp; Home </div>
+                    <br>
+                    <i class="fa fa-area-chart fa-4x"></i>&nbsp; Stats
+                    <br><br>
+                    <a href="https://www.facebook.com/ChOcO.BoY.SwAsTiK"><i class="fa fa-facebook-official fa-4x"></i>&nbsp; Facebook</a>
+                    <br><br>
+                    <i class="fa fa-bullhorn fa-4x"></i>&nbsp; Report
+                    <br><br>
+                    <i class="fa fa-github fa-4x"></i>&nbsp; Github
+                    <br><br>
+                </div>
+            </div>
+             
+        </div>
+	   <script src="js/mo.min.js"></script>
+		<script src="js/demo.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+        <script type="text/javascript" src="./js/interact.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        
+    </body>
+</html>
